@@ -1,0 +1,250 @@
+a {
+    text-decoration: none;
+    color:black;
+}
+    .logo{
+        width:160px;
+        animation:smallLogo 1s linear forwards;
+        animation-timeline: scroll();
+        animation-range: entry 0% cover 10%;
+    }
+    @keyframes smallLogo {
+        from{
+            width: 160px;
+        }
+        to{
+            width:100px;
+        }
+    }
+    .nav_icon i{
+        margin: 8px;
+        font-size: 16px;
+        color:rgb(152, 87, 87);
+    }
+    .nav_bar{
+        padding-left: 50px;
+        padding-top: 20px;
+        align-items:baseline;
+        position: fixed;
+        animation:ulpadding 1s linear forwards;
+        animation-timeline: scroll();
+        animation-range: entry 0% cover 10%;
+        background-color: white;
+        top:0;
+        z-index:1000;
+    }
+    .hover_link{
+        position: relative;
+        padding-bottom:10px;
+        padding-left: 10px; 
+    }
+    .navbar-nav{
+        font-size: 15px;
+    }
+    .nav_bar ul li:nth-child(1) ul li{
+        width:100px;
+        
+    }
+    .nav_bar ul li:nth-child(1) ul{
+        position: absolute;
+        top:50.5px;
+        left:200px;
+        list-style-type: none;
+        width:fit-content;
+        background-color: #f6f2f2;
+        padding:30px 15px 15px 10px;
+        visibility: hidden;
+        padding-top: 30px;
+        animation:hoveritems 1s linear forwards;
+        animation-timeline: scroll();
+        animation-range: entry 0% cover 10%;
+
+    }
+    @keyframes ulpadding {
+        from{
+            padding-left: 50px;
+        }
+        to{
+            padding-top:10px ;
+        }
+    }
+    @keyframes hoveritems{
+        from{
+            left:-200px;
+        }
+        to{
+            left:-150px;
+            
+        }
+    }
+
+    .bedge1{
+        animation:bedge 1s linear forwards;
+        animation-timeline: scroll();
+        animation-range: entry 0% cover 10%;
+    }
+    @keyframes bedge{
+        from{
+            top:20px;
+        }
+        to{
+            top:6px;
+        }
+    }
+  
+   .nav-link1{
+        width: 50px;
+        margin-left: 20px;
+        padding-bottom: 0;
+        
+    }
+    .nav_bar ul li:nth-child(1)  span i{
+        font-size: 10px;
+        padding: 10px;
+        margin-left: -10px;
+    }
+    
+    .nav_bar ul li:nth-child(1):hover span i{
+    transform: rotate(90deg);
+    cursor: pointer;
+    }
+    .nav_bar ul li:nth-child(1) ul img{
+        max-width: 100px;
+    }
+
+    .nav_bar ul li:nth-child(1) ul figcaption{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color:black;
+        white-space:wrap;
+    }
+    .nav_bar ul li:nth-child(1) ul figure a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+    }
+      @media screen and (min-width:720px){
+    
+        .nav_bar ul li:nth-child(1):hover ul {
+            visibility: visible;
+        }
+        }
+    @media screen and (max-width:720px){
+        .show1{
+        visibility: visible !important;
+       
+        }
+        .logo{
+            width:120px;
+            margin-left:50px;
+            }
+            .nav_bar ul li:nth-child(1) ul{
+                padding: 20px 4px;
+                margin: 0;
+                left:0;
+                gap:15px !important;
+            }
+            .show2  {
+                margin-top: 620px;
+            }
+            .navbar-nav > li{
+                padding: 0 !important;
+            }
+            .nav_bar ul li:nth-child(1) ul{
+                animation: none;
+            }
+            .nav_bar ul li:nth-child(1) ul figcaption{
+                font-size: 13px;
+            }
+            .logo{
+                animation: none;
+            }
+            .carousel-indicators{
+                position: absolute;
+                top:290px;
+                gap:8px;
+              }
+              .imgs{
+                display: grid !important;
+                grid-template-columns: auto auto;
+             }
+             .logo2{
+                margin: 0;
+             }
+         }
+        .carousel1{
+            position:inherit;
+            height: 60vh;
+            margin-top: 97px;
+        }
+        .carousel-indicators [data-bs-target] {
+            background-color: rgb(162, 112, 112);
+            width: 10px; 
+            height: 10px; 
+            border-radius: 50%; 
+          }
+          .carousel-indicators{
+            position: absolute;
+            bottom: 60px;
+            gap:8px;
+          }
+          .carousel-indicators .active {
+            background-color:rgba(0, 0, 0, 0.768);
+          }
+          .imgs{
+            display:flex;
+            flex-wrap: wrap;
+            column-gap:10px;
+            row-gap: 10px;
+            padding:0px 70px 20px 70px;
+            justify-content: center;
+         }
+
+    footer p{
+        padding: 0;
+        font-size: 16px;
+        margin:5px;
+        white-space: nowrap;
+    } 
+    .logo2{
+        width:150px !important;
+        margin-bottom: 20px;
+    }
+    footer button{
+        width:225px;
+        border:1px solid black;
+        margin-top: 5px;
+    }
+    footer button:hover{
+        background-color: rgba(255, 68, 0, 0.87);
+        transition: 0.3s linear;
+        color:white;
+    }
+    footer h5{
+        font-weight: 450;
+    }
+    .chatInfo{
+        background-color: rgb(188, 154, 42);
+        color: white;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 8px;
+        position: fixed;
+        bottom: 0;
+        right:20px;
+        font-size: 18px;
+    }
+    .chatInfo i{
+        font-size: 30px;
+        line-height: 10px;
+        vertical-align: -5px;
+    }
+    .chatInfo .text{
+        display: none;
+    }
+    .chatInfo:hover .text{
+        display:inline;
+    }
+     
